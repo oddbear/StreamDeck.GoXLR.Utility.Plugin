@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Route Change Action</title>
+    <link rel="stylesheet" href="css/sdpi.css">
+</head>
+<body>
+    <div class="sdpi-item" id="select_single">
+        <div class="sdpi-item-label">Channel</div>
+        <select id="channelValue" class="sdpi-item-value select sdProperty" onchange="setSettings()">
+            <option value="System">System</option>
+            <option value="Music">Music</option>
+            <option value="Game">Game</option>
+            <option value="LineOut">LineOut</option>
+            <option value="LineIn">LineIn</option>
+            <option value="Console">Console</option>
+            <option value="Chat">Chat</option>
+            <option value="Sample">Sample</option>
+            <option value="Mic">Mic</option>
+            <option value="Headphones">Headphones</option>
+            <option value="MicMonitor">MicMonitor</option>
+        </select>
+    </div>
+    <div class="sdpi-item" id="select_single">
+        <div class="sdpi-item-label">Action</div>
+        <select id="actionValue" class="sdpi-item-value select sdProperty" onchange="setSettings()">
+            <option value="Set">Set</option>
+            <option value="Increment">Increment</option>
+            <option value="Decrement">Decrement</option>
+        </select>
+    </div>
+    <div class="sdpi-item">
+        <div class="sdpi-item-label">Value</div>
+        <input id="valueValue" class="sdpi-item-value sdProperty" onchange="setSettings()" value="0" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/barraider/streamdeck-easypi@latest/src/sdtools.common.js"></script>
+</body>
+</html>

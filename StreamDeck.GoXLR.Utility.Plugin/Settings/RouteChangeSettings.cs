@@ -16,6 +16,6 @@ namespace StreamDeck.GoXLR.Utility.Plugin.Settings
 
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty(PropertyName = "actionValue")]
-        public Value Action { get; set; } = Value.Toggle;
+        public BoolenValue Action { get; set; } = BoolenValue.Toggle;
     }
 }

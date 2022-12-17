@@ -60,6 +60,20 @@
           "TitleAlignment": "bottom"
         }
       ]
+    },
+    {
+      "Name": "Volume change",
+      "UUID": "com.oddbear.goxlr.utility.volumechange",
+      "Icon": "Images/Icons/Icon",
+      "Tooltip": "A volume change action",
+      "PropertyInspectorPath": "PropertyInspector/VolumeChangeAction.html",
+      "States": [
+        {
+          "Image": "Images/Plugin/output_on",
+          "Title": "Volume On",
+          "TitleAlignment": "bottom"
+        }
+      ]
     }
   ],
   "Category": "GoXLR Utility",

@@ -19,16 +19,15 @@ namespace StreamDeck.GoXLR.Utility.Plugin
             //System.Diagnostics.Debugger.Launch();
 #endif
             var client = new GoXlrUtilityClient();
-            var routingService = new RoutingService(client);
-            var profileService = new ProfileService(client);
-            var micProfileService = new MicProfileService(client);
 
             var serviceCollection = new ServiceCollection();
 
             serviceCollection.AddSingleton(client);
-            serviceCollection.AddSingleton(routingService);
-            serviceCollection.AddSingleton(profileService);
-            serviceCollection.AddSingleton(micProfileService);
+            //We need to assure the services are created before we start the client:
+            serviceCollection.AddSingleton(new RoutingService(client));
+            serviceCollection.AddSingleton(new ProfileService(client));
+            serviceCollection.AddSingleton(new MicProfileService(client));
+            serviceCollection.AddSingleton(new VolumeChangeService(client));
 
             serviceCollection.AddStreamDeck();
 

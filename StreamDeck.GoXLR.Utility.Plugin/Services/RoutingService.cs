@@ -48,7 +48,7 @@ namespace StreamDeck.GoXLR.Utility.Plugin.Services
             }
         }
 
-        public void SetRouting(InputDevice input, OutputDevice output, Value action)
+        public void SetRouting(InputDevice input, OutputDevice output, BoolenValue action)
         {
             var state = GetNewState(input, output, action);
 
@@ -68,11 +68,11 @@ namespace StreamDeck.GoXLR.Utility.Plugin.Services
         public bool GetState(InputDevice input, OutputDevice output)
             => _routingTable[(input, output)];
 
-        private bool GetNewState(InputDevice input, OutputDevice output, Value action)
+        private bool GetNewState(InputDevice input, OutputDevice output, BoolenValue action)
             => action switch
             {
-                Value.On => true,
-                Value.Off => false,
+                BoolenValue.On => true,
+                BoolenValue.Off => false,
                 _ => !_routingTable[(input, output)]
             };
     }

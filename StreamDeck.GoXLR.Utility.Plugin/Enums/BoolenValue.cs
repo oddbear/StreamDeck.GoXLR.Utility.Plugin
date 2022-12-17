@@ -1,6 +1,6 @@
 ﻿namespace StreamDeck.GoXLR.Utility.Plugin.Enums;
 
-public enum Value
+public enum BoolenValue
 {
     On,
     Off,
