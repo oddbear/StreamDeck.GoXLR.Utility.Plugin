@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/GeekyEggo/SharpDeck/master/src/SharpDeck.PropertyInspector/manifest-schema.json",
+  "Name": "GoXLR Utility",
+  "Version": "0.0.1",
+  "Author": "oddbear",
+  "Actions": [
+    {
+      "Name": "Route Change",
+      "UUID": "com.oddbear.goxlr.utility.routechange",
+      "Icon": "Images/Icons/routing",
+      "Tooltip": "A route changing action",
+      "PropertyInspectorPath": "PropertyInspector/RouteChangeAction.html",
+      "States": [
+        {
+          "Image": "Images/Plugin/routing_on",
+          "Title": "Route On",
+          "TitleAlignment": "bottom"
+        },
+        {
+          "Image": "Images/Plugin/routing_off",
+          "Title": "Route Off",
+          "TitleAlignment": "bottom"
+        }
+      ]
+    },
+    {
+      "Name": "Profile change",
+      "UUID": "com.oddbear.goxlr.utility.profilechange",
+      "Icon": "Images/Icons/presets",
+      "Tooltip": "A profile change action",
+      "PropertyInspectorPath": "PropertyInspector/ProfileChangeAction.html",
+      "States": [
+        {
+          "Image": "Images/Plugin/preset_on",
+          "Title": "Profile On",
+          "TitleAlignment": "bottom"
+        },
+        {
+          "Image": "Images/Plugin/preset_off",
+          "Title": "Profile Off",
+          "TitleAlignment": "bottom"
+        }
+      ]
+    }
+  ],
+  "Category": "GoXLR Utility",
+  "CategoryIcon": "Images/Icons/category",
+  "CodePath": "StreamDeck.GoXLR.Utility.Plugin.exe",
+  "Description": "A GoXLR Utility plugin for the Stream Deck",
+  "Icon": "Images/Icons/category",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.1"
+  },
+  "OS": [
+    {
+      "MinimumVersion": "10",
+      "Platform": "windows"
+    }
+  ]
+}
