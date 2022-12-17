@@ -10,13 +10,4 @@ namespace StreamDeck.GoXLR.Utility.Plugin.Settings
         [JsonProperty(PropertyName = "profileValues")]
         public SelectData[] Profiles { get; set; } = Array.Empty<SelectData>();
     }
-
-    public class SelectData
-    {
-        [JsonProperty(PropertyName = "name")]
-        public string Name { get; set; }
-
-        [JsonProperty(PropertyName = "index")]
-        public int Index { get; set; }
-    }
 }

@@ -60,15 +60,7 @@ namespace StreamDeck.GoXLR.Utility.Plugin.Actions
 
         private async Task UpdateInputImage()
         {
-            switch (_settings.Input)
-            {
-                case InputDevice.Microphone:
-                    await SetImageStates("mic_l_on", "mic_l_off");
-                    break;
-                default:
-                    await SetImageAsync(null);
-                    break;
-            }
+            await SetImageAsync(null);
         }
 
         private async Task UpdateOutputTitle()

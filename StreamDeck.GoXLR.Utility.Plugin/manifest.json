@@ -41,6 +41,25 @@
           "TitleAlignment": "bottom"
         }
       ]
+    },
+    {
+      "Name": "Mic Profile change",
+      "UUID": "com.oddbear.goxlr.utility.micprofilechange",
+      "Icon": "Images/Icons/presets",
+      "Tooltip": "A mic profile change action",
+      "PropertyInspectorPath": "PropertyInspector/MicProfileChangeAction.html",
+      "States": [
+        {
+          "Image": "Images/Plugin/mic_l_on",
+          "Title": "Mic Profile On",
+          "TitleAlignment": "bottom"
+        },
+        {
+          "Image": "Images/Plugin/mic_l_off",
+          "Title": "Mic Profile Off",
+          "TitleAlignment": "bottom"
+        }
+      ]
     }
   ],
   "Category": "GoXLR Utility",

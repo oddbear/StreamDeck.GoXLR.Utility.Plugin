@@ -21,12 +21,14 @@ namespace StreamDeck.GoXLR.Utility.Plugin
             var client = new GoXlrUtilityClient();
             var routingService = new RoutingService(client);
             var profileService = new ProfileService(client);
-            
+            var micProfileService = new MicProfileService(client);
+
             var serviceCollection = new ServiceCollection();
 
-            serviceCollection.AddSingleton(profileService);
-            serviceCollection.AddSingleton(routingService);
             serviceCollection.AddSingleton(client);
+            serviceCollection.AddSingleton(routingService);
+            serviceCollection.AddSingleton(profileService);
+            serviceCollection.AddSingleton(micProfileService);
 
             serviceCollection.AddStreamDeck();
 
